@@ -1,0 +1,92 @@
+{
+"skeleton": { "hash": "tENQM/TNMgs", "spine": "4.1.17", "x": -25, "width": 50, "height": 50 },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "front", "bone": "root", "attachment": "front" },
+	{ "name": "back", "bone": "root", "attachment": "back" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"back": {
+				"back": {
+					"y": 25,
+					"width": 50,
+					"height": 50,
+					"sequence": { "count": 27 }
+				}
+			},
+			"front": {
+				"front": {
+					"y": 25,
+					"width": 50,
+					"height": 50,
+					"sequence": { "count": 27 }
+				}
+			}
+		}
+	}
+],
+"events": {
+	"chest_open": {},
+	"loop_start": {}
+},
+"animations": {
+	"opening_dopamine_back": {
+		"slots": {
+			"front": {
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"attachments": {
+			"default": {
+				"back": {
+					"back": {
+						"sequence": [
+							{ "mode": "loop", "delay": 0.1 },
+							{ "time": 2.6, "index": 8, "delay": 0.0833 }
+						]
+					}
+				}
+			}
+		},
+		"events": [
+			{ "name": "loop_start" },
+			{ "time": 0.3, "name": "chest_open" }
+		]
+	},
+	"opening_dopamine_front": {
+		"slots": {
+			"back": {
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"attachments": {
+			"default": {
+				"back": {
+					"back": {
+						"sequence": [
+							{ "mode": "loop", "delay": 0.1 },
+							{ "time": 2.6, "index": 8, "delay": 0.0833 }
+						]
+					}
+				},
+				"front": {
+					"front": {
+						"sequence": [
+							{ "mode": "loop", "delay": 0.1 }
+						]
+					}
+				}
+			}
+		}
+	}
+}
+}

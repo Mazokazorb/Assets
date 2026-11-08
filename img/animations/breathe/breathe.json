@@ -1,0 +1,179 @@
+{
+"skeleton": { "hash": "N95Up+3aiWo", "spine": "4.2.43", "x": -12, "width": 24, "height": 24 },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "y": 12 }
+],
+"slots": [
+	{ "name": "holdingbreath", "bone": "bone", "attachment": "holdingbreath" },
+	{ "name": "holdingrelease", "bone": "bone", "attachment": "holdingrelease" },
+	{ "name": "neutral", "bone": "bone", "attachment": "neutral" },
+	{ "name": "breathein", "bone": "bone", "attachment": "breathein" },
+	{ "name": "breatheinneutral", "bone": "bone", "attachment": "breatheinneutral" },
+	{ "name": "breatheout", "bone": "bone", "attachment": "breatheout" },
+	{ "name": "breatheoutneutral", "bone": "bone", "attachment": "breatheoutneutral" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"breathein": {
+				"breathein": {
+					"path": "transitions/breathein/wispbreathein",
+					"width": 24,
+					"height": 24,
+					"sequence": { "count": 20, "digits": 3 }
+				}
+			},
+			"breatheinneutral": {
+				"breatheinneutral": {
+					"path": "transitions/breatheinneutral/wispbreatheinneutral",
+					"width": 24,
+					"height": 24,
+					"sequence": { "count": 20, "digits": 3 }
+				}
+			},
+			"breatheout": {
+				"breatheout": {
+					"path": "transitions/breatheout/wispbreatheout",
+					"width": 24,
+					"height": 24,
+					"sequence": { "count": 20, "digits": 3 }
+				}
+			},
+			"breatheoutneutral": {
+				"breatheoutneutral": {
+					"path": "transitions/breatheoutneutral/wispbreatheoutneutral",
+					"width": 24,
+					"height": 24,
+					"sequence": { "count": 20, "digits": 3 }
+				}
+			},
+			"holdingbreath": {
+				"holdingbreath": {
+					"path": "loops/holdingbreath/wispholdingbreath",
+					"width": 24,
+					"height": 24,
+					"sequence": { "count": 20, "digits": 3 }
+				}
+			},
+			"holdingrelease": {
+				"holdingrelease": {
+					"path": "loops/holdingrelease/wispholdingrelease",
+					"width": 24,
+					"height": 24,
+					"sequence": { "count": 20, "digits": 3 }
+				}
+			},
+			"neutral": {
+				"neutral": {
+					"path": "loops/neutral/wispneutral",
+					"width": 24,
+					"height": 24,
+					"sequence": { "count": 20, "digits": 3 }
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"loops/holdingbreath": {
+		"attachments": {
+			"default": {
+				"holdingbreath": {
+					"holdingbreath": {
+						"sequence": [
+							{ "mode": "loop", "delay": 0.1 },
+							{ "time": 2, "mode": "loop", "delay": 0.05 }
+						]
+					}
+				}
+			}
+		}
+	},
+	"loops/holdingrelease": {
+		"attachments": {
+			"default": {
+				"holdingrelease": {
+					"holdingrelease": {
+						"sequence": [
+							{ "mode": "loop", "delay": 0.1 },
+							{ "time": 2, "mode": "loop", "index": 4, "delay": 0.0833 }
+						]
+					}
+				}
+			}
+		}
+	},
+	"loops/neutral": {
+		"attachments": {
+			"default": {
+				"neutral": {
+					"neutral": {
+						"sequence": [
+							{ "mode": "loop", "delay": 0.1 },
+							{ "time": 2, "mode": "loop", "index": 4, "delay": 0.0833 }
+						]
+					}
+				}
+			}
+		}
+	},
+	"transitions/breathein": {
+		"attachments": {
+			"default": {
+				"breathein": {
+					"breathein": {
+						"sequence": [
+							{ "mode": "loop", "delay": 0.1 },
+							{ "time": 2, "mode": "loop", "index": 19 }
+						]
+					}
+				}
+			}
+		}
+	},
+	"transitions/breatheinneutral": {
+		"attachments": {
+			"default": {
+				"breatheinneutral": {
+					"breatheinneutral": {
+						"sequence": [
+							{ "mode": "loop", "delay": 0.1 },
+							{ "time": 2, "mode": "loop", "index": 19 }
+						]
+					}
+				}
+			}
+		}
+	},
+	"transitions/breatheout": {
+		"attachments": {
+			"default": {
+				"breatheout": {
+					"breatheout": {
+						"sequence": [
+							{ "mode": "loop", "delay": 0.1 },
+							{ "time": 2, "mode": "loop", "index": 19 }
+						]
+					}
+				}
+			}
+		}
+	},
+	"transitions/breatheoutneutral": {
+		"attachments": {
+			"default": {
+				"breatheoutneutral": {
+					"breatheoutneutral": {
+						"sequence": [
+							{ "mode": "loop", "delay": 0.1 },
+							{ "time": 2, "mode": "loop", "index": 19 }
+						]
+					}
+				}
+			}
+		}
+	}
+}
+}
